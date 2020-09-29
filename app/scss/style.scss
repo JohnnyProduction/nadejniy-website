@@ -27,9 +27,9 @@
 .header__list {
   display: flex;
   justify-content: space-between;
-  li{
+  li {
     margin-left: 55px;
-    a{
+    a {
       color: #fff;
     }
   }
@@ -46,38 +46,47 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 750px;
-  padding-top: 180px;
+  height: 100vh;
+  padding-top: 178px;
 }
 
 .main__descr {
   h1 {
-    width: 610px;
     margin: 0;
     font-weight: bold;
     font-size: 87px;
     color: #fff;
     letter-spacing: 0.02em;
     text-shadow: 3px 3px 10px rgba(64, 64, 64, 0.7);
+    word-wrap: break-word;
+  }
+  h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 78px;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-shadow: 3px 3px 10px rgba(64, 64, 64, 0.7);
   }
   span {
     display: block;
-    width: 520px;
     font-size: 24px;
     margin-top: 30px;
   }
 }
+
 .main__contacts {
   display: flex;
-
+  margin-bottom: 180px;
 }
+
 .main__contacts-btn {
   width: 220px;
   height: 55px;
   background-color: $blue;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  span {
+  a {
     display: block;
     padding-top: 19px;
     font-weight: 900;
@@ -86,6 +95,14 @@
     text-align: center;
     color: #CCCCCC;
     letter-spacing: 0.08em;
+    button {
+      padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+    }
   }
 }
 
