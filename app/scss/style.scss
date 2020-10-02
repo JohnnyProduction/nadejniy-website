@@ -119,6 +119,7 @@
 .services {
   position: relative;
   height: 780px;
+  margin-bottom: 70px;
 }
 
 .services-title {
@@ -130,6 +131,11 @@
   }
 }
 
+.services__inner {
+  position: relative;
+  height: 100%;
+}
+
 .services__refit {
   position: absolute;
   z-index: 2;
@@ -137,7 +143,7 @@
   width: 41%;
   height: 510px;
   left: 0;
-  top: 230px;
+  top: -35px;
   background: #fff;
   border-radius: 16px;
   box-shadow: 2px 3px 3px rgba(64, 64, 64, 0.25);
@@ -152,9 +158,7 @@
 .services__repair {
   position: absolute;
   right: 0;
-  bottom: 0;
   z-index: 1;
-  //max-width: 1220px;
   max-width: 1920px;
   width: 61%;
   height: 510px;
@@ -164,17 +168,19 @@
 }
 
 .services__repair-content {
-  width: 620px;
-  height: 437px;
   padding-top: 31px;
   padding-left: 164px;
 }
 
+.services-items{
+
+}
+
 .services-item {
   display: flex;
+  align-items: center;
   margin-top: 40px;
-  width: 235px;
-  height: 40px;
+  padding-right: 40px;
 }
 
 .services-item__img {
@@ -190,16 +196,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  width: 680px;
 }
 
 .services-item:nth-child(2n) {
-  justify-self: right;
+  //justify-self: right;
 }
+
+// ADVANTAGES
 
 .advantages {
   position: relative;
-  height: 927px;
+  height: 100%;
+}
+
+.advantages__inner {
+  position: relative;
+  margin-bottom: 73px;
+  height: 700px;
 }
 
 .advantages__content {
