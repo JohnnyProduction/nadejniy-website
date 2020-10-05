@@ -4020,8 +4020,8 @@ li {
 .advantages__content {
   position: absolute;
   left: 0;
-  max-width: 1160px;
-  width: 100%;
+  max-width: 1920px;
+  width: 61%;
   height: 576px;
   background: #fff;
   border-top-right-radius: 16px;
@@ -4058,14 +4058,17 @@ li {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 946px;
+  max-width: 1920px;
+  width: 50%;
   height: 576px;
+  background-color: #fff;
+  background-image: url(../img/advantages.jpg);
 }
 
 .advantages__label {
   position: absolute;
-  top: 352px;
-  right: 757px;
+  top: 350px;
+  left: -90px;
   width: 277px;
   height: 160px;
   padding-top: 20px;
