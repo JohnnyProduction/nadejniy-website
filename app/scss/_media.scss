@@ -29,9 +29,86 @@
 }
 
 @media (max-width: 1040px) {
+  .page-title h2 {
+    font-size: 100px;
+  }
 
+  .services__refit {
+    max-width: 1040px;
+    width: 34%;
+  }
+
+  .services__refit-content {
+    padding-left: 22px;
+  }
+
+  .services__repair {
+    max-width: 1040px;
+    width: 70%;
+  }
+
+  .services__repair-content {
+    padding-left: 120px;
+  }
 }
 
+@media (max-width: 768px) {
+  .page-title h2 {
+    font-size: 56px;
+  }
+  .services__repair-content {
+    padding-left: 101px;
+  }
+  .services__refit {
+    max-width: 768px;
+    width: 34%;
+    height: 548px;
+  }
+  .services__repair {
+    max-width: 768px;
+    width: 71%;
+    height: 548px;
+  }
+  .services__inner .services-title {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 700px) {
+  .services {
+    height: unset;
+  }
+  .services__inner {
+
+  }
+  .services__refit {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .services__refit-content {
+    width: auto;
+    margin: 0;
+    padding: 32px 0 0 22px;
+  }
+  .services__repair {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .services__repair-content {
+    width: auto;
+    margin: 0;
+    padding: 53px 0 30px 22px;
+  }
+  .repair-width {
+    display: block;
+  }
+}
 @media (max-width: 480px) {
   .page-title h2 {
     font-size: 36px;
