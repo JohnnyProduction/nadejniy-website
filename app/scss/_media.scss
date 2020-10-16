@@ -50,6 +50,23 @@
   .services__repair-content {
     padding-left: 120px;
   }
+
+  .advantages__content {
+    width: 70%;
+  }
+
+  .advantages__label {
+    top: unset;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .advantages__img {
+    top: 0;
+    width: 35%;
+    background-position: -160px -55px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -107,6 +124,28 @@
   }
   .repair-width {
     display: block;
+  }
+  .advantages__inner {
+    height: unset;
+  }
+
+  .advantages__content {
+    position: static;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .advantages__list {
+    margin: auto auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .advantages__img {
+    position: relative;
+    width: 100%;
+    background-position: -100px -150px;
   }
 }
 @media (max-width: 480px) {
