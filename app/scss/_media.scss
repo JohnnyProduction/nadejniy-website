@@ -29,6 +29,86 @@
 }
 
 @media (max-width: 1040px) {
+  body.lock{
+    overflow: hidden;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 4;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      background-color: #fff;
+      transition: all 0.3s ease 0s;
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+    span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      background-color: #fff;
+      transition: all 0.3s ease 0s;
+    }
+    &.active:before {
+      top: 9px;
+      transform: rotate(45deg);
+    }
+    &.active:after {
+      bottom: 9px;
+      transform: rotate(-45deg);
+    }
+    &.active span {
+      transform: scale(0);
+    }
+  }
+  .header__menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100%;
+    overflow: auto;
+    padding: 133px 20px 20px 20px;
+    background-color: $black;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+    &.active {
+      right: 0;
+    }
+  }
+  .header__list {
+    display: block;
+    li {
+      margin: 0 40px 0 0;
+      opacity: .5;
+      transition: all .4s ease;
+      &:hover {
+        opacity: .7;
+      }
+      &.active {
+        opacity: 1;
+      }
+      a {
+        color: #fff;
+      }
+    }
+  }
+
   .page-title h2 {
     font-size: 100px;
   }
