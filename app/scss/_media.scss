@@ -1,13 +1,8 @@
 @media (max-width: 1440px) {
 
-
 }
 
 @media (max-width: 1366px) {
-
-}
-
-@media (max-width: 1340px) {
 
 }
 
@@ -29,7 +24,7 @@
 }
 
 @media (max-width: 1040px) {
-  body.lock{
+  body.lock {
     overflow: hidden;
   }
   .header__burger {
@@ -108,40 +103,32 @@
       }
     }
   }
-
   .page-title h2 {
     font-size: 100px;
   }
-
   .services__refit {
     max-width: 1040px;
     width: 34%;
   }
-
   .services__refit-content {
     padding-left: 22px;
   }
-
   .services__repair {
     max-width: 1040px;
     width: 70%;
   }
-
   .services__repair-content {
     padding-left: 120px;
   }
-
   .advantages__content {
     width: 70%;
   }
-
   .advantages__label {
     top: unset;
     bottom: 0;
     left: 0;
     width: 100%;
   }
-
   .advantages__img {
     top: 0;
     width: 35%;
@@ -170,7 +157,6 @@
     font-size: 27px;
   }
 }
-
 @media (max-width: 700px) {
   .services {
     height: unset;
@@ -208,26 +194,28 @@
   .advantages__inner {
     height: unset;
   }
-
   .advantages__content {
     position: static;
     width: 100%;
     height: 100%;
     border-radius: 0;
   }
-
   .advantages__list {
     margin: auto auto;
     width: 100%;
     height: 100%;
   }
-
   .advantages__img {
     position: relative;
     width: 100%;
     background-position: -100px -150px;
+
+  }
+  .contacts {
+    display: none;
   }
 }
+
 @media (max-width: 480px) {
   .page-title h2 {
     font-size: 36px;
@@ -258,7 +246,7 @@
 }
 
 @media (max-width: 320px) {
-  .page-title h2 {
+  .page-title h2{
     font-size: 30px;
   }
   .main__contacts-numbers {

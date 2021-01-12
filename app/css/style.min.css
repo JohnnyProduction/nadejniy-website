@@ -3751,8 +3751,8 @@ template {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -4147,6 +4147,124 @@ li {
   font-size: 42px;
 }
 
+.reviews {
+  margin-bottom: 115px;
+}
+
+.slider {
+  padding-top: 50px;
+}
+
+.slider__item {
+  width: 300px;
+  height: 291px;
+  padding: 30px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 5px rgba(64, 64, 64, 0.5);
+          box-shadow: 0 2px 5px rgba(64, 64, 64, 0.5);
+  border-radius: 6px;
+}
+
+.slider__item-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__item-head__img {
+  width: 55px;
+  height: 55px;
+}
+
+.slider__item-head__img img {
+  border-radius: 26px;
+}
+
+.slider__item-head__info {
+  margin-left: 10px;
+  padding-top: 12px;
+  font-weight: bold;
+}
+
+.slider__item-head__info p {
+  font-weight: normal;
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.slider__item-text {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.slider {
+  padding: 90px 5px 70px 5px;
+}
+
+.slider__slide {
+  width: 300px;
+  -webkit-transition-duration: .5s;
+       -o-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.slider__item-head__img {
+  text-align: center;
+}
+
+.slider__item-head__img img {
+  max-width: 100%;
+}
+
+.slider .swiper-button-prev {
+  left: 340px;
+}
+
+.slider .swiper-button-next {
+  right: 340px;
+}
+
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+  color: #ffffff;
+  font-size: 80px;
+}
+
+.slider .swiper-pagination {
+  top: 5px;
+  z-index: -1;
+}
+
+.slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 4px;
+  border-radius: 8px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.slider .swiper-pagination-bullet-active {
+  width: 100px;
+  height: 4px;
+  border-radius: 8px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  background-color: #0057D9;
+  opacity: 50%;
+}
+
+.slider .swiper-slide-active {
+  max-width: 400px;
+  -webkit-transform: scale(1.33);
+      -ms-transform: scale(1.33);
+          transform: scale(1.33);
+  -webkit-transition-duration: .5s;
+       -o-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
 .contacts {
   position: relative;
   height: 930px;
@@ -4426,6 +4544,9 @@ li {
     position: relative;
     width: 100%;
     background-position: -100px -150px;
+  }
+  .contacts {
+    display: none;
   }
 }
 

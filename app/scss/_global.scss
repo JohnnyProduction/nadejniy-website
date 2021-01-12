@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -19,7 +19,6 @@ a {
   display: inline-block;
   text-decoration: none;
 }
-
 ul,
 li {
   list-style: none;
@@ -27,15 +26,16 @@ li {
   padding: 0;
 }
 
-.container{
+.container {
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
-.page-title{
+
+.page-title {
   padding: 70px 0;
-  h2{
+  h2 {
     margin: 0;
     font-weight: bold;
     font-size: 120px;

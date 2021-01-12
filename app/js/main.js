@@ -1,11 +1,3 @@
-// burger
-$(document).ready(function () {
-    $('.header__burger').click(function (e) {
-        $('.header__burger,.header__menu').toggleClass('active');
-        $('body').toggleClass('lock');
-    })
-});
-
 let nav = $('nav');
 let line = $('<div />').addClass('line');
 line.appendTo(nav);
@@ -74,4 +66,13 @@ $(document).ready(function () {
         let top = $(id).offset().top;
         $('body,html').animate({scrollTop: top-80}, 1000);
     })
-});
+
+})
+
+//burger
+$(document).ready(function () {
+    $('.header__burger').click(function (e) {
+        $('.header__burger,.header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    })
+})
