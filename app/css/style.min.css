@@ -4225,10 +4225,10 @@ li {
   right: 340px;
 }
 
-.slider .swiper-button-prev,
-.slider .swiper-button-next {
-  color: #ffffff;
-  font-size: 80px;
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after {
+  font-size: 24px;
+  color: #404040;
 }
 
 .slider .swiper-pagination {
@@ -4285,7 +4285,7 @@ li {
 
 .contacts-info {
   position: absolute;
-  bottom: 167px;
+  bottom: 300px;
   right: 0;
   width: 790px;
   height: 307px;
